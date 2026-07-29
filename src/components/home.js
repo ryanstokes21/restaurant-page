@@ -4,7 +4,7 @@ export default function loadHome() {
   content.textContent = '';
 
   const hero = document.createElement('div');
-  container.classList.add('hero');
+  hero.classList.add('hero');
 
   const restaurantName = document.createElement('h1');
   restaurantName.textContent = 'Iron Oak Tavern';
@@ -18,5 +18,5 @@ export default function loadHome() {
 
   hero.append(restaurantName, headline, description);
 
-  content.appendChild(container);
+  content.appendChild(hero);
 }
